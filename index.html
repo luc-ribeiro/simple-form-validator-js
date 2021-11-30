@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de Formulário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftside">
+        <header class="header">
+          <h1>Crie uma conta</h1>
+        </header>
+
+        <form action="POST" class="validator" autocomplete="off">
+          <label for="name">
+            Nome: <br />
+            <input type="text" name="name" data-rules="required|min=2" />
+          </label>
+          <label for="email">
+            E-mail: <br />
+            <input type="text" name="email" data-rules="required|email" />
+          </label>
+          <label for="senha">
+            Senha: <br />
+            <input type="password" name="senha" data-rules="required|min=4" />
+          </label>
+          <label for="cadastrar">
+            <input id="submit" type="submit" value="Cadastrar" />
+          </label>
+        </form>
+
+        <div class="login">
+          <p>Já tem uma conta? <a href="#">Faça Login</a></p>
+        </div>
+
+        <footer class="footer">
+          <p>
+            Feito por <a href="https://github.com/luc-ribeiro">Lucas Ribeiro</a>
+          </p>
+        </footer>
+      </div>
+      <div class="rightside">
+        <img src="images/hero.svg" alt="Ilustração" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

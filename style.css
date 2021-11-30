@@ -1,0 +1,152 @@
+:root {
+  font-size: 62.5%;
+  --black: #2c2c2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #e3e7eb;
+  font-family: 'Roboto', sans-serif;
+  color: var(--black);
+}
+
+.container {
+  width: min(90vw, 1160px);
+  margin: 8rem auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 780px;
+}
+
+.leftside {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  width: 350px;
+}
+
+.leftside .header {
+  align-self: center;
+}
+
+.leftside h1 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+}
+
+.leftside label {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.leftside input {
+  background-color: rgba(127, 94, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+
+#submit {
+  background: #64cd68;
+  margin-top: 1.6rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.8s;
+}
+
+#submit:hover {
+  background: #438b46;
+}
+
+.error {
+  margin-top: 0.8rem;
+  background-color: rgba(255, 0, 0, 0.4);
+  border: 1px solid #ff0000;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.login {
+  margin-top: 2.4rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.login a {
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.rightside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightside img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 936px) {
+  .container {
+    padding: 1.6rem;
+    height: 720px;
+  }
+
+  .leftside {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .leftside h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .leftside label {
+    font-size: 1.4rem;
+  }
+
+  .error {
+    font-size: 1.2rem;
+  }
+
+  .login a {
+    padding: 0.8rem 0.8rem 0.8rem 0;
+  }
+
+  .footer a {
+    padding: 0.8rem 0.8rem 0.8rem 0;
+  }
+
+  .rightside {
+    display: none;
+  }
+}
