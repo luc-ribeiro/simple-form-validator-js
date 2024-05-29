@@ -2,14 +2,18 @@
 Simple Form Validator
 </h1>
 
+<div align="right">
+  Clique <a href="https://github.com/luc-ribeiro/simple-form-validator-js/blob/master/README.md">aqui</a> para ver a versão em Português.
+</div>
+
 ## 💻 Projeto
-Um validador de formulário simples feito com JavaScript.
-O validador irá verificar se um campo está vazio e irá retornar uma mensagem de erro abaixo do campo específico. 
+A simple form validator made with JavaScript.
+The validator will check if a field is empty and will return an error message below the specific field.
 
 <a href="https://luc-ribeiro.github.io/form-validator/">Live Preview</a>
 
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 <div style="display: inline_block">
 	<img align="center" alt="Luc-HTML" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
@@ -22,28 +26,28 @@ O validador irá verificar se um campo está vazio e irá retornar uma mensagem 
 ### Preview
 ![banner](https://github.com/luc-ribeiro/form-validator/blob/master/design/preview.gif)
 
-## :page_facing_up: Como utilizar
+## :page_facing_up: How to use
 
-Faça um clone deste repositório:
+Clone this repository:
 
 ```sh
-  $ git clone https://github.com/luc-ribeiro/form-validator.git
+  $ git clone https://github.com/luc-ribeiro/form-validator-js.git
 ```
 
-Para validações, inserir um `data-rules` no input que deseja validar.
+For validations, insert a `data-rules` attribute in the input you want to validate.
 
 ```html5
  <input type="text" name="email" data-rules="required|email" />
  <input type="password" name="senha" data-rules="required|min=4" />
 ```
-Informar se o campo é obrigatório `required` no data-rules e qual é a restrição. <br>
-`email` para validar e-mails e `min` para validar a quantidade mínima de caracteres
+Specify if the field is required `required` in the data-rules and what the restriction is. <br>
+Use `email` to validate emails and `min` to validate the minimum number of characters.
 
 <br>
 
-Acesse o projeto utilizando a extensão Live Server do Visual Studio Code.
+Access the project using the Live Server extension of Visual Studio Code.
 
 
 ## :memo: License
 
-Copyright © 2021 Lucas Ribeiro
+MIT © 2021 Lucas Ribeiro
